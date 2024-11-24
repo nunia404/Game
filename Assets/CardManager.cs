@@ -96,7 +96,6 @@ public class CardManager : MonoBehaviour
     public void GetCard(Animations c)
     {
         
-
         //Debug.Log("recieve card info: " + c.cardList[c.cardImage.name]);
 
         if (GetAmount == 0)
@@ -145,9 +144,10 @@ public class CardManager : MonoBehaviour
                 StartCoroutine(DelayTEST());
                 getClickedCard.Clear();    
             }
-            if(Score == 10)
+            if(Score == uniqueSprites.Count)
             {
-                //Debug.Log("You WIN!");
+                Debug.Log("You WIN!");
+                SceneManager.LoadSceneAsync(3); 
                 return;
              }
              else{
