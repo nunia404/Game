@@ -17,6 +17,7 @@ public class CardManager : MonoBehaviour
     private List<Sprite> cardDeck; 
     private int Score = 0;
     public Text ScoreText;
+    public float delayTimer = 1;
     List<Animations> getClickedCard = new List<Animations>();
   
 
@@ -184,7 +185,7 @@ public class CardManager : MonoBehaviour
     private IEnumerator DelayTEST()
     {
         ResetClickableForAllCards(false);
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(delayTimer);
         ResetAllCards();
         getClickedCard.Clear();
         Debug.Log("The delay is gone.");

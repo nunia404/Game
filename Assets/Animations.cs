@@ -33,6 +33,12 @@ private void Start()
     cardList.Add("Orange_0", 9);
     cardList.Add("silver_0", 10);
     cardList.Add("green_0", 11);
+    cardList.Add("Green2_0", 12);
+    cardList.Add("Purple_0", 13);
+    cardList.Add("Brown2_0", 14);
+    cardList.Add("Blue2_0", 15);
+
+
 
     
     
