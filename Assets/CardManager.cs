@@ -22,6 +22,7 @@ public class CardManager : MonoBehaviour
 
     public void Start()
     {
+       ScoreText.text = "Score: " + Score.ToString(); 
         foreach (var s in uniqueSprites)
 {
     //Debug.Log(s.name);
@@ -127,7 +128,8 @@ public class CardManager : MonoBehaviour
                     }
                     Score +=1;
                     //Debug.Log(Score);
-                    ScoreText.text = Score.ToString(); 
+                    ScoreText.text = "Score: " + Score.ToString(); 
+                    
                     getClickedCard.Clear();
                     
                 }

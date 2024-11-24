@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2877512482460461231
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1603175453695522646}
+  - component: {fileID: 1606010367305889821}
+  m_Layer: 0
+  m_Name: CardManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1603175453695522646
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2877512482460461231}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1606010367305889821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2877512482460461231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afe3769d90cda4bf696e070e7843c531, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  desiredSize: {x: 0.6, y: 0.7}
+  uniqueSprites:
+  - {fileID: -6206629992480730279, guid: 25b87f429ef774e248d7f7858682a31f, type: 3}
+  - {fileID: 866969197614840516, guid: 1afa1c3307d8745f999a00caa7bb9d6c, type: 3}
+  - {fileID: -8800547769010163135, guid: cc514cd7c854749758254e247a16d908, type: 3}
+  - {fileID: 551206785556306028, guid: 4606862c06a34441285386f3dbbef519, type: 3}
+  - {fileID: 2171993791036579371, guid: e26376aa6f01443eca54e352ad90b1b6, type: 3}
+  - {fileID: 7081527322082503550, guid: 13eb39bb270f04bc4b131b3e6676ccf2, type: 3}
+  - {fileID: -7381184880430962403, guid: 97e7e08ca2c8b4fb49704ee3cb6b7e5e, type: 3}
+  - {fileID: 4121880872312635667, guid: 074bedde5ba8341ceab0fefcffb3f7f3, type: 3}
+  - {fileID: -6099873399732076034, guid: 31aded149b1f848b3ac32542731757bc, type: 3}
+  - {fileID: -2615874204119335, guid: 3226db132957148259b59e8d3d64d8a0, type: 3}
+  cardObjects: []
+  ScoreText: {fileID: 0}
