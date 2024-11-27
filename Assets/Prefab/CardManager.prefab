@@ -56,5 +56,10 @@ MonoBehaviour:
   - {fileID: 4121880872312635667, guid: 074bedde5ba8341ceab0fefcffb3f7f3, type: 3}
   - {fileID: -6099873399732076034, guid: 31aded149b1f848b3ac32542731757bc, type: 3}
   - {fileID: -2615874204119335, guid: 3226db132957148259b59e8d3d64d8a0, type: 3}
+  - {fileID: -3895435946349517289, guid: 30fcb6465876b49ce9e7ad0b4b1891df, type: 3}
+  - {fileID: -8923911374754931897, guid: 6b45206923a8a4a009affd57fcd9768b, type: 3}
+  - {fileID: -2783683206322670802, guid: 0341566790b8240d3bbddf130a221145, type: 3}
+  - {fileID: -249953513107605027, guid: 3ae8baa2b8a484216a620d7ac17fdf97, type: 3}
   cardObjects: []
   ScoreText: {fileID: 0}
+  delayTimer: 1

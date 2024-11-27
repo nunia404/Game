@@ -122,7 +122,7 @@ public class CardManager : MonoBehaviour
             {
                 if (firstCode == secondCode)
                 {
-                    //Debug.Log("Match!");
+                    Debug.Log("Match!");
                     foreach(Animations item in getClickedCard)
                     {
                         item.isMatched = true; 
@@ -136,7 +136,7 @@ public class CardManager : MonoBehaviour
                 }
                 else
                 {
-                    //Debug.Log("This is NOT a match.");
+                    Debug.Log("This is NOT a match.");
                     StartCoroutine(DelayTEST());
                     getClickedCard.Clear();
                 }
@@ -150,7 +150,7 @@ public class CardManager : MonoBehaviour
             if(Score == uniqueSprites.Count)
             {
                 Debug.Log("You WIN!");
-                SceneManager.LoadSceneAsync(3); 
+                SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1); 
                 return;
              }
              else{
