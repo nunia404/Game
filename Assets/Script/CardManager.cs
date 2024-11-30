@@ -15,15 +15,18 @@ public class CardManager : MonoBehaviour
     public List<Sprite> uniqueSprites; 
     public List<GameObject> cardObjects;
     private List<Sprite> cardDeck; 
-    private int Score = 0;
+    public int Score = 0;
     public Text ScoreText;
     public float delayTimer = 1;
+    public Tracker tracker;
     List<Animations> getClickedCard = new List<Animations>();
   
 
     public void Start()
     {
+       tracker = FindObjectOfType<Tracker>();
        ScoreText.text = "Score: " + Score.ToString(); 
+       
         foreach (var s in uniqueSprites)
 {
     //Debug.Log(s.name);
@@ -117,7 +120,7 @@ public class CardManager : MonoBehaviour
         }
         if (GetAmount == 2)
         {
-            
+            tracker.updateTries(1);
             if (check != check2)
             {
                 if (firstCode == secondCode)
@@ -128,6 +131,7 @@ public class CardManager : MonoBehaviour
                         item.isMatched = true; 
                     }
                     Score +=1;
+                    tracker.updateTrackScore(1);
                     //Debug.Log(Score);
                     ScoreText.text = "Score: " + Score.ToString(); 
                     
